@@ -34,6 +34,7 @@ html {
 :root {
   --main-color: #171819;
   --accent-color: #ce3a11;
+  --third-color: #8b8b8b;
 }
 body {
   font-family: "Plain", sans-serif;
@@ -175,6 +176,246 @@ nav .container .icons i {
   background-color: #fff;
   border: none;
 }
+
 .feature {
+  background-color: var(--main-color);
   padding: 5rem 0rem;
+}
+.feature .feature-row {
+  display: flex;
+  justify-content: center;
+}
+.feature-col-1 {
+  width: 40%;
+  margin: auto;
+}
+.main-heading {
+  font-weight: 900;
+  font-size: 38px;
+  color: white;
+  margin-bottom: 15px;
+}
+.feature-desc {
+  color: #f3f3f3;
+  font-size: 22px;
+  margin-bottom: 15px;
+  line-height: 35px;
+}
+.feature-faded {
+  color: var(--third-color);
+  line-height: 25px;
+  opacity: 0.6;
+  margin-bottom: 35px;
+}
+
+.feature-col-2 {
+  width: 40%;
+  margin: auto;
+}
+.feature-btn {
+  background-color: var(--accent-color);
+  padding: 15px;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+}
+.feature-btn:hover {
+  background-color: white;
+  color: var(--accent-color);
+  cursor: pointer;
+}
+.time {
+  color: white;
+  font-weight: 700;
+}
+.feature-col-2 .main-heading {
+  margin-bottom: 25px;
+}
+.main-col {
+  border-left: 1px #8b8b8b3b solid;
+  padding-left: 80px;
+}
+.duration h4 {
+  margin: 15px 0 0 0;
+}
+.main-heading.special {
+  letter-spacing: -2px;
+}
+
+.instructors {
+  padding: 100px 0px;
+  background-color: #f9f9f9;
+}
+.instructors .container {
+  display: flex;
+}
+.instructors .left-part {
+  width: 50%;
+}
+.left-part h2 {
+  font-size: 34px;
+  letter-spacing: -2px;
+}
+.left-part p {
+  width: 90%;
+  color: #666262;
+  letter-spacing: 1px;
+  font-weight: 200;
+  line-height: 25px;
+}
+.instructors .cards {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+.cards .card {
+  width: 45%;
+  background-color: white;
+  -webkit-box-shadow: 0px 2px 100px -69px rgb(0 0 0 / 75%);
+  -moz-box-shadow: 0px 2px 100px -69px rgb(0 0 0 / 75%);
+  box-shadow: 0px 2px 100px -69px rgb(0 0 0 / 75%);
+}
+.cards .card .desc {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+}
+.desc .social {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.desc .name h2 {
+  margin: 0px 0px 10px 0px;
+}
+.name :last-child {
+  color: #8b8b8b;
+}
+.instructors img {
+  width: 100%;
+}
+.social .fab {
+  color: #8b8b8b;
+}
+
+.classes {
+  padding: 120px 0px;
+}
+.classes .header,
+.schedule .header {
+  text-align: center;
+  font-size: 24px;
+  color: #8b8b8b;
+  font-weight: 200;
+}
+.classes .header-2,
+.schedule .header-2 {
+  text-align: center;
+  font-size: 34px;
+  font-weight: bold;
+  margin: 10px 0px 50px 0px;
+}
+.classes .cards {
+  display: flex;
+  justify-content: space-between;
+}
+.classes .cards .card {
+  width: 31.5%;
+}
+.classes .cards .card img {
+  width: 100%;
+}
+.classes .cards .card .desc {
+  padding: 20px 30px;
+  flex-direction: column;
+  position: relative;
+}
+.classes .cards .card .desc .title {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.classes .cards .card .desc .trainer {
+  margin-bottom: 15px;
+}
+.trainer strong {
+  color: #8b8b8b;
+}
+.desc .info {
+  color: #8b8b8b;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.classes .cards .card .desc::before {
+  content: "";
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  position: absolute;
+  right: 25px;
+  font-weight: 600;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.classes .cards .card:first-child .desc::before {
+  content: "50$";
+}
+.classes .cards .card:nth-child(2) .desc::before {
+  content: "66$";
+}
+.classes .cards .card:last-child .desc::before {
+  content: "75$";
+}
+.schedule {
+  background-color: var(--main-color);
+  padding: 100px 0px;
+}
+.schedule .header-2{
+  color: white;
+}
+table{
+  width: 100%;
+}
+table,
+td,
+th {
+  border: 1px solid #66626228;
+  font-size: 14px;
+}
+td,
+th {
+  text-align: center;
+}
+table {
+  border-collapse: collapse;
+  color: white;
+}
+th {
+  background-color: var(--accent-color);
+  height: 60px;
+}
+td{
+  height: 80px;
+}
+tr td:first-child {
+  background-color: var(--accent-color);
+}
+
+td strong{
+  font-size: 16px;
+}
+td .duration {
+  margin-top: 10px;
+  color: #8b8b8b;
+}
+tr:nth-child(1) td:last-child{
+  border-right-color: transparent;
+}
+tr:nth-child(3) td:last-child{
+  border-right-color: transparent;
 }
