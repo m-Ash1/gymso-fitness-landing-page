@@ -280,6 +280,13 @@ nav .container .icons i {
   padding: 20px;
   justify-content: space-between;
 }
+.cards .card .social i{
+  transition: 0.3s;
+  cursor: pointer;
+}
+.cards .card .social i:hover{
+  color: var(--accent-color);
+}
 .desc .social {
   display: flex;
   flex-direction: column;
